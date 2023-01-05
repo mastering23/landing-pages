@@ -5,13 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/CSS/style.css" />
+    <script src="script/lenguaje.js"></script>
     <title>Mi página de destino</title>
   </head>
 
   <body>
     <header class="header container">
       <h1>Bienvenido a mi página de destino</h1>
-      <a href="index.html">English Version</a>
+      <select onchange="lenguaje()">
+        <option value="es">Spanish</option>
+        <option value="en">English</option>
+      </select>
+     
     </header>
 
     <main class="main container">
