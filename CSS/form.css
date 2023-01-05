@@ -4,7 +4,8 @@ body{
 
 /* Ajustamos el tamaño del contenedor del formulario */
 .div__form {
-    width: 500px;
+    width: 400px;
+   
     margin: 0 auto;
   }
   
@@ -12,7 +13,7 @@ body{
   .header h1 , p {
     text-align: center;
     color: #333;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   
   /* Damos estilo al formulario */
@@ -33,8 +34,8 @@ body{
   .form input[type="tel"],
   .form input[type="subject"] {
     width: 100%;
+    height: 30px;
     padding: 12px 20px;
-    margin-bottom: 20px;
     box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -42,7 +43,7 @@ body{
   
   .form textarea {
     width: 100%;
-    height: 150px;
+    height: 50px;
     padding: 12px 20px;
     box-sizing: border-box;
     border: 1px solid #ccc;
