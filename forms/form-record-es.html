@@ -11,7 +11,7 @@
 <body>
     <h1>Obtener más información sobre nuestro producto o servicio</h1>
     <p>Gracias por su interés en nuestro producto o servicio. Complete el siguiente formulario para recibir más información.</p>
-    <form>
+    <form onsubmit="emailCollector(); reset(); return false;">
         <label for="name">Nombre:</label><br>
         <input type="text" id="name" name="name"><br>
         <label for="email">Correo electrónico:</label><br>
@@ -25,7 +25,23 @@
         <button type="submit">Enviar</button>
     </form>
 
-    <script src="/script/emailCollector.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function emailCollector() {
+            Email.send({
+                Host: "smtp.elasticemail.com",
+                Username: "username",
+                Password: "password",
+                To: 'them@website.com',
+                From: document.getElementById("email").value,
+                Subject: "This is the subject",
+                Body: "And this is the body"
+            }).then(
+                message => alert(message)
+            );
+        }
+    </script>
+
 </body>
 
 </html>
