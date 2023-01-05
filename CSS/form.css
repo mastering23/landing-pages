@@ -19,12 +19,13 @@ body{
   /* Damos estilo al formulario */
   .form {
     border: 1px solid #ccc;
-    padding: 20px;
+    padding: 0 20px 20px ;
   }
   
   /* Damos estilo a los elementos del formulario */
   .form label {
     display: block;
+    margin-top: 20px;
     margin-bottom: 10px;
     font-weight: bold;
   }
@@ -35,7 +36,7 @@ body{
   .form input[type="subject"] {
     width: 100%;
     height: 30px;
-    padding: 12px 20px;
+    padding: 15px 20px;
     box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 4px;
