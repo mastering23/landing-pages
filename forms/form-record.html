@@ -11,7 +11,7 @@
 <body>
     <h1>Learn More About Our Product or Service</h1>
     <p>Thank you for your interest in our product or service. Please fill out the form below to receive more information.</p>
-    <form>
+    <form onsubmit="emailCollector(); reset(); return false;">
         <label for="name">Name:</label><br>
         <input type="text" id="name" name="name"><br>
         <label for="email">Email:</label><br>
@@ -24,7 +24,25 @@
         <textarea id="message" name="message" rows="5" cols="30"></textarea><br><br>
         <button type="submit">Send</button>
     </form>
-    <script src="/script/emailCollector.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function emailCollector() {
+            Email.send({
+                Host: "smtp.elasticemail.com",
+                Username: "username",
+                Password: "password",
+                To: 'them@website.com',
+                From: document.getElementById("email").value,
+                Subject: "This is the subject",
+                Body: "And this is the body"
+            }).then(
+                message => alert(message)
+            );
+        }
+    </script>
+
+
+
 </body>
 
 </html>
