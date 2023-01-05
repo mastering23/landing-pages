@@ -1,3 +1,7 @@
+body{
+ 
+}
+
 /* Ajustamos el tamaño del contenedor del formulario */
 .div__form {
     width: 500px;
@@ -5,7 +9,7 @@
   }
   
   /* Damos estilo al encabezado del formulario */
-  .header h1 {
+  .header h1 , p {
     text-align: center;
     color: #333;
     margin-bottom: 20px;

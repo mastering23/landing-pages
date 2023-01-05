@@ -6,59 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/CSS/form.css" />
     
-    <title>Obtener más información</title>
-  </head>
-
-<<<<<<< HEAD
-  <body>
-    <div class="container header">
-      <h1>Obtener más información sobre nuestro producto o servicio</h1>
-    </div>
-
-    <div class="div__form">
-
-    <form class="form container">
-      <p>
-        Gracias por su interés en nuestro producto o servicio. Complete el
-        siguiente formulario para recibir más información.
-      </p>
-      
-        <label for="name">Nombre:</label><br />
-        <input type="text" id="name" name="name" /><br />
-        <label for="email">Correo electrónico:</label><br />
-        <input type="email" id="email" name="email" /><br />
-        <label for="contact">Número de contacto:</label><br />
-        <input type="text" id="contact" name="contact" /><br />
-        <label for="subject">Asunto:</label><br />
-        <input type="text" id="subject" name="subject" /><br /><br />
-        <label for="message">Mensaje:</label><br />
-        <textarea id="message" name="message" rows="5" cols="30"></textarea
-        ><br /><br />
-=======
-<body>
-    <h1>Obtener más información sobre nuestro producto o servicio</h1>
-    <p>Gracias por su interés en nuestro producto o servicio. Complete el siguiente formulario para recibir más información.</p>
-    <form onsubmit="emailCollector(); reset(); return false;">
-        <label for="name">Nombre:</label><br>
-        <input type="text" id="name" name="name"><br>
-        <label for="email">Correo electrónico:</label><br>
-        <input type="email" id="email" name="email"><br>
-        <label for="contact">Número de contacto:</label><br>
-        <input type="text" id="contact" name="contact"><br>
-        <label for="subject">Asunto:</label><br>
-        <input type="text" id="subject" name="subject"><br><br>
-        <label for="message">Mensaje:</label><br>
-        <textarea id="message" name="message" rows="5" cols="30"></textarea><br><br>
->>>>>>> ef53776a2b133177355a90cbcdf1eb7ad2ffccce
-        <button type="submit">Enviar</button>
-      
-    </form>
-<<<<<<< HEAD
-</div>
     <script src="/script/emailCollector.js"></script>
-  </body>
-</html>
-=======
 
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
@@ -76,8 +24,39 @@
             );
         }
     </script>
+    <title>Obtener más información</title>
+
+  </head>
+
+  <body>
+    <div class="container header">
+      <h1>Obtener más información sobre nuestro producto o servicio</h1>
+      <p>Gracias por su interés en nuestro producto o servicio. Complete el siguiente formulario para recibir más información.</p>
+    </div>
+
+    <div class="div__form">
+
+   
+    <form  class="form container" onsubmit="emailCollector(); reset(); return false;">
+        <label for="name">Nombre:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Correo electrónico:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="contact">Número de contacto:</label><br>
+        <input type="text" id="contact" name="contact"><br>
+        <label for="subject">Asunto:</label><br>
+        <input type="text" id="subject" name="subject"><br><br>
+        <label for="message">Mensaje:</label><br>
+        <textarea id="message" name="message" rows="5" cols="30"></textarea><br><br>
+
+        <button type="submit">Enviar</button>
+      
+    </form>
+
+</div>
+
 
 </body>
 
 </html>
->>>>>>> ef53776a2b133177355a90cbcdf1eb7ad2ffccce
+
