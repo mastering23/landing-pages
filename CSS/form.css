@@ -1,4 +1,18 @@
+body{
+  background-image: url(/img/email.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
+table{
+  margin: auto;
+}
+
+tr{
+  display: flex;
+  flex-direction: column;
+
+}
 
 /* Ajustamos el tamaño del contenedor del formulario */
 .div__form {
@@ -18,6 +32,7 @@
   .form {
     border: 1px solid #ccc;
     padding: 0 20px 20px ;
+    background-color: #eeeeee8b;
   }
   
   /* Damos estilo a los elementos del formulario */
@@ -38,6 +53,7 @@
     box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 4px;
+    margin-top: 10px;
   }
   
   .form textarea {
@@ -48,20 +64,25 @@
     border: 1px solid #ccc;
     border-radius: 4px;
     resize: none;
+    margin-top: 10px;
   }
   
   .form button[type="submit"] {
     width: 100%;
-    background-color: #4caf50;
+    background-color: #028cc3e9;
     color: white;
     padding: 14px 20px;
     margin-top: 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    transition: all 300ms ease;
   }
   
   .form button[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #000304b0;
+    transition: all 300ms ease;
   }
+
+
   
