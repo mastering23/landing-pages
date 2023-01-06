@@ -14,7 +14,7 @@ function lenguaje() {
 
 // Cambio de promo
 
-var imagenes = ['/img/promo1.jpg', '/img/promo2.jpg', '/img/promo3.jpg'];
+var imagenes = ['/img/promo1.jpg', '/img/promo2.png', '/img/promo3.jpg'];
 var contador = 0;
 
 function cambiarImagen() {
