@@ -1,0 +1,98 @@
+<html>
+
+<body>
+    <canvas id="canvas" width="800" height="600"></canvas>
+</body>
+
+<script>
+    const canvas = document.getElementById("canvas");
+    const ctx = canvas.getContext("2d");
+
+    const player = {
+        x: 0,
+        y: 0,
+        width: 50,
+        height: 50,
+        speed: 5,
+        moveUp() {
+            this.y -= this.speed;
+        },
+        moveDown() {
+            this.y += this.speed;
+        },
+        moveLeft() {
+            this.x -= this.speed;
+        },
+        moveRight() {
+            this.x += this.speed;
+        },
+        draw() {
+            ctx.fillRect(this.x, this.y, this.width, this.height);
+        }
+    };
+
+    const bullets = [];
+
+    const enemies = [];
+
+    function createEnemies() {
+        for (let i = 0; i < 5; i++) {
+            enemies.push({
+                x: Math.random() * canvas.width,
+                y: Math.random() * canvas.height,
+                width: 50,
+                height: 50,
+                health: 3
+            });
+        }
+    }
+
+    createEnemies();
+
+    document.addEventListener("keydown", event => {
+        switch (event.keyCode) {
+            case 38: // Up arrow
+                player.moveUp();
+                break;
+            case 40: // Down arrow
+                player.moveDown();
+                break;
+            case 37: // Left arrow
+                player.moveLeft();
+                break;
+            case 39: // Right arrow
+                player.moveRight();
+                break;
+            case 32: // Space bar
+                bullets.push({
+                    x: player.x + player.width / 2,
+                    y: player.y,
+                    radius: 5,
+                    speed: 10
+                });
+                break;
+        }
+    });
+
+    function gameLoop() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        bullets.forEach(bullet => {
+            bullet.y -= bullet.speed;
+            ctx.beginPath();
+            ctx.arc(bullet.x, bullet.y, bullet.radius, 0, Math.PI * 2);
+            ctx.fill();
+        });
+
+        enemies.forEach(enemy => {
+            ctx.fillRect(enemy.x, enemy.y, enemy.width, enemy.height);
+        });
+
+        player.draw();
+        requestAnimationFrame(gameLoop);
+    }
+
+    gameLoop();
+</script>
+
+</html>
