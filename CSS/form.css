@@ -1,69 +1,75 @@
-body{
- 
-}
-
 /* Ajustamos el tamaño del contenedor del formulario */
+
 .div__form {
     width: 400px;
-   
     margin: 0 auto;
-  }
-  
-  /* Damos estilo al encabezado del formulario */
-  .header h1 , p {
+}
+
+
+/* Damos estilo al encabezado del formulario */
+
+.header h1,
+p {
     text-align: center;
     color: #333;
-    margin-bottom: 10px;
-  }
-  
-  /* Damos estilo al formulario */
-  .form {
-    border: 1px solid #ccc;
-    padding: 0 20px 20px ;
-  }
-  
-  /* Damos estilo a los elementos del formulario */
-  .form label {
+    margin-bottom: 5px;
+}
+
+
+/* Damos estilo al formulario */
+
+.form {
+    border: groove 1px rgb(33, 32, 32);
+    border-radius: 2em;
+    padding: 0 40px 60px;
+    margin: 10px;
+}
+
+
+/* Damos estilo a los elementos del formulario */
+
+.form label {
     display: block;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     font-weight: bold;
-  }
-  
-  .form input[type="text"],
-  .form input[type="email"],
-  .form input[type="tel"],
-  .form input[type="subject"] {
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="tel"],
+.form input[type="subject"] {
+    margin: 10px;
     width: 100%;
-    height: 30px;
-    padding: 15px 20px;
+    height: 20px;
+    padding: 20px 20px;
     box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 4px;
-  }
-  
-  .form textarea {
+}
+
+.form textarea {
+    margin: 10px;
     width: 100%;
-    height: 50px;
-    padding: 12px 20px;
+    padding: 10px 10px;
     box-sizing: border-box;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 10px;
     resize: none;
-  }
-  
-  .form button[type="submit"] {
-    width: 100%;
+}
+
+.form button[type="submit"] {
+    float: right;
+    margin: 10px;
+    width: 50%;
     background-color: #4caf50;
     color: white;
-    padding: 14px 20px;
-    margin-top: 20px;
+    padding: 10px 10px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
-  
-  .form button[type="submit"]:hover {
+}
+
+.form button[type="submit"]:hover {
     background-color: #45a049;
-  }
-  
+}

@@ -2,28 +2,47 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS/form.css" />
     <title>Learn More</title>
 </head>
 
 <body>
-    <h1>Learn More About Our Product or Service</h1>
-    <p>Thank you for your interest in our product or service. Please fill out the form below to receive more information.</p>
-    <form onsubmit="emailCollector(); reset(); return false;">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name"><br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email"><br>
-        <label for="contact">Contact Number:</label><br>
-        <input type="text" id="contact" name="contact"><br>
-        <label for="subject">Subject:</label><br>
-        <input type="text" id="subject" name="subject"><br><br>
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" rows="5" cols="30"></textarea><br><br>
-        <button type="submit">Send</button>
-    </form>
+    <table>
+        <tr>
+            <th>
+                <div class="container header">
+                    <h1>Learn More About Our Product or Service</h1>
+                    <p>Thank you for your interest in our product or service. Please fill out the form below to receive more information.</p>
+                    <br>
+                    <br>
+                    <img src="/img/email.jpg" alt="email" width="800px">
+
+                </div>
+
+            </th>
+            <th>
+                <div class="div__form">
+                    <form class="form container" onsubmit="emailCollector(); reset(); return false;">
+                        <br>
+                        <legend>
+                            <h2>information</h2>
+                        </legend>
+                        <hr>
+                        <input type="text" id="name" name="name" placeholder="Name :">
+                        <input type="email" id="email" name="email" placeholder="Email :">
+                        <input type="text" id="contact" name="contact" placeholder="Contact :">
+                        <input type="text" id="subject" name="subject" placeholder="Subject :">
+                        <textarea id="message" name="message" rows="5" cols="30"></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </th>
+        </tr>
+    </table>
+
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
         function emailCollector() {
@@ -40,9 +59,6 @@
             );
         }
     </script>
-
-
-
 </body>
 
 </html>
