@@ -1,3 +1,5 @@
+//Cambio de bottom de idioma
+
 var lenguaje;
 
 function lenguaje() {
@@ -10,6 +12,7 @@ function lenguaje() {
   }
 }
 
+// Cambio de promo
 
 var imagenes = ['/img/promo1.jpg', '/img/promo2.jpg', '/img/promo3.jpg'];
 var contador = 0;
