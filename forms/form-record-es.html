@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/CSS/form.css" />
+<<<<<<< HEAD
 
+=======
+>>>>>>> d990c38c00322f1ef24b636c0f32e17ef225aa52
     <script src="/script/emailCollector.js"></script>
-
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
       function emailCollector() {
@@ -23,6 +26,7 @@
       }
     </script>
     <title>Obtener más información</title>
+<<<<<<< HEAD
   </head>
 
   <body>
@@ -56,3 +60,42 @@
     </div>
   </body>
 </html>
+=======
+
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>
+                <div class="container header">
+                    <h1>Más información sobre nuestro producto</h1>
+                    <p>Gracias por su interés en nuestro producto. Complete el siguiente formulario para solicitar más información.</p>
+                    <br>
+                    <img src="/img/email.jpg" alt="email" width="800px">
+                </div>
+            </th>
+            <th>
+                <div class="div__form">
+                    <form class="form container" onsubmit="emailCollector(); reset(); return false;">
+                        <br>
+                        <legend>
+                            <h2>información</h2>
+                        </legend>
+                        <hr>
+                        <input type="text" id="name" name="name" placeholder="Nombre :">
+                        <input type="email" id="email" name="email" placeholder="Correo electrónico :">
+                        <input type="text" id="contact" name="contact" placeholder="Contacto :">
+                        <input type="text" id="subject" name="subject" placeholder="Asunto :">
+                        <textarea id="message" name="message" rows="5" cols="30"></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </th>
+        </tr>
+    </table>
+
+</body>
+
+</html>
+>>>>>>> d990c38c00322f1ef24b636c0f32e17ef225aa52
