@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
 </head>
+<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 <style>
     * {
         margin: 0;
@@ -15,26 +16,33 @@
     }
     
     .logo {
+        display: flex;
         width: 100%;
-        height: 100px;
-        background-color: darkcyan;
+        height: 300px;
+        background-color: black;
+        color: white;
+        font-size: 3rem;
+    }
+    
+    .logo h1 {
+        align-items: center;
+        margin: auto;
     }
     
     .header {
         width: 100%;
         height: 100px;
-        background-color: blueviolet;
-    }
-    
-    .introText {
-        width: 100%;
-        height: 100px;
-        background-color: darkmagenta;
     }
     
     .container {
         display: flex;
         height: 100%;
+    }
+    
+    #photoLogo {
+        height: 300px;
+        padding: 20px;
+        border-radius: 30px;
     }
     
     .box {
@@ -49,21 +57,86 @@
         height: 100px;
         background-color: black;
     }
+    
+    .barnavegador {
+        background-color: black;
+        color: white;
+        width: 100%;
+        height: 80px;
+    }
+    
+    .barnavegador>ul {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .barnavegador>ul>li {
+        margin: 10px;
+        padding-top: 10px;
+        font-size: 1.2rem;
+        list-style: none;
+        cursor: pointer;
+    }
+    
+    .barnavegador>ul>li:hover {
+        color: #fff;
+        text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+    }
+    
+    .introText {
+        display: flex;
+        align-items: center;
+    }
+    
+    #photoMiddle {
+        width: 200px;
+        height: 200px;
+        margin-right: 20px;
+        border: 1px solid black;
+        float: right;
+    }
+    
+    .introText p {
+        font-family: "Times New Roman", serif;
+        font-size: 18px;
+        line-height: 1.5;
+        width: 60%;
+        float: right;
+    }
 </style>
 
 <body>
 
     <div class="logo">
 
-
-
+        <h1>Grand Theft Auto </h1>
+        <img src="/img/characterDr.jpg" alt="" id="photoLogo">
     </div>
 
     <div class="header">
+        <nav class="barnavegador">
+            <ul>
+                <li>
+                    <a href=""></a>Home
+                </li>
+                <li>
+                    <a href=""></a>Contact us
+                </li>
+                <li>
+                    <a href=""></a>About
+                </li>
+            </ul>
+        </nav>
 
     </div>
 
     <div class="introText">
+        <img src="/img/characterDr2.jpg" alt="" id="photoMiddle">"Welcome to Santiago de los Caballeros, One of the largest city in the Dominican Republic. My name is Manuel, but everyone just calls me "Manny." I grew up on the streets of this city, learning
+        how to survive in a place where the only law is the law of the jungle. I learned how to hustle, how to fight, and how to make a quick peso any way I could. But as I got older, I realized that there was more to life than just scrapping and stealing.
+        I wanted something more - something bigger. So I turned to the only thing I knew how to do well: crime. I worked my way up through the ranks, building a network of connections and allies that helped me take control of the city's underground. Now,
+        I'm the most powerful man in Santo Domingo. But with great power comes great danger, and there are always those who want to take me down. I'll do whatever it takes to protect my empire and my people. Are you ready to join me on this wild ride?
+        Let's do this."
+        <p></p>
 
     </div>
 
