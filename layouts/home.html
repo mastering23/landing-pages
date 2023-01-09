@@ -43,6 +43,7 @@
         height: 300px;
         padding: 20px;
         border-radius: 30px;
+        float: left;
     }
     
     .box {
@@ -83,29 +84,26 @@
         text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
     }
     
-    .introText {
-        display: flex;
-        align-items: center;
-    }
+   
     
     #photoMiddle {
         width: 200px;
         height: 200px;
         margin-right: 20px;
         border: 1px solid black;
-        float: right;
+        float: left;
     }
     
-    .introText p {
+    .introText > p {
         font-family: "Times New Roman", serif;
         font-size: 18px;
         line-height: 1.5;
-        width: 60%;
-        float: right;
+       
+       
     }
 </style>
 
-<body>
+<div>
 
     <div class="logo">
 
@@ -133,22 +131,32 @@
 
     </div>
 
-    <div class="introText">
-        <img src="/img/characterDr2.jpg" alt="" id="photoMiddle">"Welcome to Santiago de los Caballeros, One of the largest city in the Dominican Republic. My name is Manuel, but everyone just calls me "Manny." I grew up on the streets of this city, learning
-        how to survive in a place where the only law is the law of the jungle. I learned how to hustle, how to fight, and how to make a quick peso any way I could. But as I got older, I realized that there was more to life than just scrapping and stealing.
-        I wanted something more - something bigger. So I turned to the only thing I knew how to do well: crime. I worked my way up through the ranks, building a network of connections and allies that helped me take control of the city's underground. Now,
-        I'm the most powerful man in Santo Domingo. But with great power comes great danger, and there are always those who want to take me down. I'll do whatever it takes to protect my empire and my people. Are you ready to join me on this wild ride?
-        Let's do this."
-        <p></p>
+    <div>
 
-    </div>
+    <div class="introText">
+        <img src="/img/characterDr2.jpg" alt="" id="photoMiddle">
+        <p>"Welcome to Santiago de los Caballeros, One of the largest city in the Dominican Republic. My name is Manuel, but everyone just calls me "Manny." I grew up on the streets of this city, learning
+            how to survive in a place where the only law is the law of the jungle. I learned how to hustle, how to fight, and how to make a quick peso any way I could. But as I got older, I realized that there was more to life than just scrapping and stealing.
+            I wanted something more - something bigger. So I turned to the only thing I knew how to do well: crime. I worked my way up through the ranks, building a network of connections and allies that helped me take control of the city's underground. Now,
+            I'm the most powerful man in Santo Domingo. But with great power comes great danger, and there are always those who want to take me down. I'll do whatever it takes to protect my empire and my people. Are you ready to join me on this wild ride?
+            Let's do this."</p>
+    </div> 
+
+    <!-- <div>
+        <div class="introText" style="float: left;" />
+        <img src="/img/characterDr2.jpg" id="photoMiddle">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do   eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad   minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip   ex ea commodo consequat. Duis aute irure dolor in reprehenderit in   voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur   sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt   mollit anim id est laborum.</p>
+        </div>
+        
+        
+    </div> -->
 
     <div class="container">
-        <div class="box1 box"></div>
-        <div class="box2 box"></div>
-        <div class="box3 box"></div>
+        <div class="box1 box">a</div>
+        <div class="box2 box">a</div>
+        <div class="box3 box">a</div>
     </div>
-
+</div>
     <footer>
 
     </footer>

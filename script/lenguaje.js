@@ -22,4 +22,4 @@ function cambiarImagen() {
   contador = (contador + 1) % imagenes.length;
 }
 
-setInterval(cambiarImagen, 2000);
+setInterval(cambiarImagen, 3000);
