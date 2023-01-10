@@ -6,8 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overlock+SC&display=swap" rel="stylesheet">
 </head>
-<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+
+
+
 <style>
     * {
         margin: 0;
@@ -99,7 +104,7 @@
     .introText {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
+        gap: 5px;
         grid-column: 1 / 3;
     }
     
@@ -113,11 +118,11 @@
         height: 750px;
         display: flex;
         flex-direction: column;
-        padding: 20px;
+        padding: 10px;
         /* overflow: hidden;
         overflow: scroll; */
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-size: small;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: large;
     }
     
     .photoMiddle {
@@ -136,13 +141,27 @@
         overflow: scroll;
         overflow-x: hidden;
     }
+    
+    .logo>h1>p {
+        text-align: center;
+        font-size: 0.8em;
+        font-family: 'Overlock SC', cursive;
+        display: inline-block;
+    }
+    
+    .logo>h1 {
+        text-align: center;
+    }
 </style>
 
 <div>
 
     <div class="logo">
 
-        <h1>Grand Theft Auto VIII</h1>
+        <h1>Grand Theft Auto VIII
+            <p>Caribbean Paradises </p>
+        </h1>
+
 
         <img src="/img/characterDr.jpg" alt="" id="photoLogo">
 
@@ -174,12 +193,15 @@
 
                 <div class="box1 box">
                     <img src="/img/characterDr2.jpg" alt="" class="photoMiddle">
+                    <div class="boxT">
+                        <p>"Welcome to Santiago de los Caballeros, One of the largest city in the Dominican Republic. My name is Manuel, but everyone just calls me "Manny." I grew up on the streets of this city, learning how to survive in a place where the
+                            only law is the law of the jungle. I learned how to hustle, how to fight, and how to make a quick peso any way I could. But as I got older, I realized that there was more to life than just scrapping and stealing. I wanted something
+                            more - something bigger. So I turned to the only thing I knew how to do well: crime. I worked my way up through the ranks, building a network of connections and allies that helped me take control of the city's underground.
+                            Now, I'm the most powerful man in Santo Domingo. But with great power comes great danger, and there are always those who want to take me down. I'll do whatever it takes to protect my empire and my people. Are you ready to join
+                            me on this wild ride? Let's do this."</p>
 
-                    <p>"Welcome to Santiago de los Caballeros, One of the largest city in the Dominican Republic. My name is Manuel, but everyone just calls me "Manny." I grew up on the streets of this city, learning how to survive in a place where the only
-                        law is the law of the jungle. I learned how to hustle, how to fight, and how to make a quick peso any way I could. But as I got older, I realized that there was more to life than just scrapping and stealing. I wanted something
-                        more - something bigger. So I turned to the only thing I knew how to do well: crime. I worked my way up through the ranks, building a network of connections and allies that helped me take control of the city's underground. Now,
-                        I'm the most powerful man in Santo Domingo. But with great power comes great danger, and there are always those who want to take me down. I'll do whatever it takes to protect my empire and my people. Are you ready to join me on
-                        this wild ride? Let's do this."</p>
+                    </div>
+
                 </div>
 
                 <div class="box2 box">
@@ -217,22 +239,30 @@
                 </div>
 
                 <div class="box4 box"><img src="/img/characterDr4.jpg" alt="" class="photoMiddle">
-                    <p>The player takes on the role of Marco, a young, ambitious and charismatic man from Italy. Marco comes from a traditional Italian mafia family and grew up surrounded by crime and violence. He's familiar with the ways of the organization
-                        and has always dreamed of rising through the ranks to become a powerful leader. As the game begins, Marco is sent to the Dominican Republic to represent his family's interests in the island. He's tasked with establishing new connections
-                        and expanding the family's influence in the Caribbean country. Marco arrives in the island with a sense of purpose and a burning desire to prove himself to his family. He's determined to make a name for himself and establish the
-                        family's dominance in the region. As Marco begins to carry out various missions for the family, such as stealing valuable goods, protecting illegal shipments, and intimidating rival gangs, he quickly proves to be a valuable asset
-                        to the organization.
 
-                    </p>
+                    <div class="boxT">
+                        <p>The player takes on the role of Marco, a young, ambitious and charismatic man from Italy. Marco comes from a traditional Italian mafia family and grew up surrounded by crime and violence. He's familiar with the ways of the organization
+                            and has always dreamed of rising through the ranks to become a powerful leader. As the game begins, Marco is sent to the Dominican Republic to represent his family's interests in the island. He's tasked with establishing new
+                            connections and expanding the family's influence in the Caribbean country. Marco arrives in the island with a sense of purpose and a burning desire to prove himself to his family. He's determined to make a name for himself
+                            and establish the family's dominance in the region. As Marco begins to carry out various missions for the family, such as stealing valuable goods, protecting illegal shipments, and intimidating rival gangs, he quickly proves
+                            to be a valuable asset to the organization.
+
+                        </p>
+
+                    </div>
+
 
                 </div>
                 <div class="box5 box">
                     <img src="/img/characterDr5.jpg" alt="" class="photoMiddle">
-                    <p>He's able to complete every mission with success, earning the respect of the criminal bosses and the fear of the rivals. As Marco becomes more successful and respected within the organization, he's given more challenging missions and
-                        eventually rises through the ranks to become a powerful leader of the organization. But as Marco's ambitions grow, he'll have to navigate the complicated and dangerous world of the mafia, dealing with enemies both within and outside
-                        of the organization. He will have to make difficult decisions that will affect the outcome of the story, and his actions will have consequences on the gameplay and the story. Throughout the game, players will experience the gritty
-                        and dangerous criminal world of the Dominican Republic through Marco's eyes, They'll see how he establish the dominance of the Italian mafia in the island, the way he navigate the culture and the language, his relationships with
-                        the other leaders and how he asserts his power. They'll have to use their wits and violence to achieve their goals and survive the challenges.</p>
+                    <div class="boxT">
+                        <p>He's able to complete every mission with success, earning the respect of the criminal bosses and the fear of the rivals. As Marco becomes more successful and respected within the organization, he's given more challenging missions
+                            and eventually rises through the ranks to become a powerful leader of the organization. But as Marco's ambitions grow, he'll have to navigate the complicated and dangerous world of the mafia, dealing with enemies both within
+                            and outside of the organization. He will have to make difficult decisions that will affect the outcome of the story, and his actions will have consequences on the gameplay and the story. Throughout the game, players will experience
+                            the gritty and dangerous criminal world of the Dominican Republic through Marco's eyes, They'll see how he establish the dominance of the Italian mafia in the island, the way he navigate the culture and the language, his relationships
+                            with the other leaders and how he asserts his power. They'll have to use their wits and violence to achieve their goals and survive the challenges.</p>
+                    </div>
+
                 </div>
                 <div class="box6 box"><img src="/img/characterDr6.jpg" alt="" class="photoMiddle">
                     <div class="boxT">
