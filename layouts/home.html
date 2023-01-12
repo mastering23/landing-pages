@@ -157,6 +157,41 @@
         color: #0fa;
         text-align: justify;
     }
+    
+    #prompt-box {
+        width: 30%;
+        height: auto;
+        padding: 20px;
+        border: 2px solid #F59B45;
+        border-radius: 10px;
+        background-color: #FDF5E6;
+        font-family: Arial, sans-serif;
+        font-size: 18px;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    #prompt-box h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: #F59B45;
+    }
+    
+    #prompt-box button {
+        width: 100px;
+        height: 40px;
+        margin: 20px;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #F59B45;
+        font-family: Arial, sans-serif;
+        font-size: 18px;
+        color: #fff;
+        cursor: pointer;
+    }
 </style>
 
 <body onload="showPrompt()">
@@ -280,7 +315,7 @@
                                 is involved in a variety of illegal activities including human trafficking, drug trafficking, and money laundering. Kenichi starts to question the morality of the organization and its leaders, and he struggles with his
                                 own sense of loyalty and duty. Kenichi's doubts and questions put him at odds with Hiro and the other Yakuza leaders. They begin to see him as a liability, and they start to plot against him. Kenichi becomes aware of the
                                 situation and decides to take action against the organization.Kenichi takes a stand against the Yakuza, risking everything to bring the organization down. He confronts Hiro and the other leaders, and a fierce battle ensues.
-                                </p>
+                            </p>
 
                         </div>
 
@@ -545,6 +580,15 @@
                 </div>
             </div>
         </div>
+        <div id="prompt-box">
+            <h1>Notice</h1>
+            <p>This website is for educational and development purposes only. By accessing this site, you agree to use it solely for the purpose of learning and developing your web development skills.</p>
+            <div class="button-container">
+                <button onclick="continueAccess()">OK</button>
+                <button onclick="redirectToError()">Cancel</button>
+            </div>
+        </div>
+
         <footer>
 
             <div class="box31 box">
@@ -585,18 +629,17 @@
         </footer>
 
 </body>
-
 <script>
-    function showPrompt() {
-        var message = "This website is for educational and development purposes only. By accessing this site, you agree to use it solely for the purpose of learning and developing your web development skills.";
-        var result = window.confirm(message);
-        if (result == true) {
-            // Continue with website access
-        } else {
-            // Redirect to another page or display an error message
-            window.location.href = "https://www.example.com/error";
-        }
+    function continueAccess() {
+        // Do something when user clicks OK
+        // for example you could remove the prompt box from the screen
+        document.getElementById("prompt-box").style.display = "none";
+    }
+
+    function redirectToError() {
+        window.location.href = "https://www.example.com/error";
     }
 </script>
+
 
 </html>
