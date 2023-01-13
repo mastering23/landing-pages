@@ -52,7 +52,8 @@
         height: 300px;
         padding: 20px;
         border-radius: 30px;
-        float: left;
+        position: relative;
+        left: 0;
     }
     
     .box {
@@ -102,12 +103,6 @@
         gap: 5px;
         grid-column: 1 / 3;
         text-justify: inter;
-    }
-    
-    .introText>p {
-        font-family: "Times New Roman", serif;
-        font-size: 18px;
-        line-height: 1.5;
     }
     
     .box {
@@ -197,9 +192,10 @@
         color: #fff;
         cursor: pointer;
     }
-    /* body {
-        filter:blur(6px);
-     } */
+    
+    .container {
+        filter: blur(6px);
+    }
 </style>
 
 <body onload="showPrompt()">
@@ -209,14 +205,16 @@
         <div class="logo">
 
             <h1>Grand Theft Auto VIII
-                <p>Caribbean Paradise </p>
-            </h1>
 
+                <span>Caribbean Paradise </span>
+
+            </h1>
 
             <img src="/img/characterDr.jpg" alt="" id="photoLogo">
 
 
         </div>
+
 
         <div class="header">
             <nav class="barnavegador">
@@ -611,15 +609,23 @@
 
 
     </div>
+
     <script>
         function continueAccess() {
             // Do something when user clicks OK
             // for example you could remove the prompt box from the screen
             document.getElementById("prompt-box").style.display = "none";
+            document.querySelector(".container").style.filter = "none";
         }
 
         function redirectToError() {
             window.location.href = "https://www.example.com/error";
+        }
+
+        var images = document.querySelectorAll(".photoMiddle");
+        for (var i = 0; i < images.length; i++) {
+            images[i].width = 200;
+            images[i].height = 200;
         }
     </script>
 
